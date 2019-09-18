@@ -1,0 +1,160 @@
+/* Joseph P. Pasaoa
+*/
+
+
+/* CSS RESET begins
+
+   http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* CSS RESET ends */
+
+
+
+html, body, div#base-grid {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+div#base-grid {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: 15% 79% 6%;
+}
+
+div#header {
+  position: relative;
+  z-index: 50;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  padding: 8px 22px 8px 21px;
+  border-bottom: solid 1px #bbb;
+  box-shadow: 0px 1px 6px #333;
+
+}
+
+h1 {
+  font-size: 46px;
+  margin: 0 0 12px 0;
+  font-family: 'Bungee Shade', cursive;
+}
+
+button#button-draw10 {
+  width: 330px;
+  margin: 0 0 0 5px;
+  border-radius: 8px;
+  border: solid 1px #ddd;
+  box-shadow: 2px 1px 2px grey;
+}
+
+div#cards-flex {
+  position: relative;
+  /* z-index: -10; */
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+
+  padding: 22px 21px 22px 8px;
+  background-color: lawngreen;
+}
+
+div.joke-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 19vw;
+  height: max-content;
+  margin: 6px;
+  background-color: azure;
+  border: solid 2px turquoise;
+  border-radius: 32px;
+  box-shadow: 2px 2px 5px #111;
+
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.card-setup {
+  height: min-content;
+  padding: 15px 12px;
+  font-size: 23px;
+  font-family: 'Chewy', serif;
+  color: darkorange;
+}
+
+.card-punchline {
+  height: min-content;
+  padding: 15px 12px;
+  text-align: left;
+  font-size: 24px;
+  font-family: 'Luckiest Guy', sans-serif;
+  color: indigo;
+  transition: opacity 0.6s;
+}
+
+div#footer {
+  position: relative;
+  z-index: 50;
+
+  font-size: 11px;
+  font-family: 'Sniglet', serif;
+  color: darkolivegreen;
+
+  padding: 8px 22px 8px 21px;
+  border-top: solid 1px #bbb;
+  box-shadow: 0px -1px 6px #777;
+}
