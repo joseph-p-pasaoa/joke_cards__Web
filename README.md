@@ -8,6 +8,3 @@ Fetches from the [Official Jokes API](https://github.com/15Dkatz/official_joke_a
   1. Jokes are prevented from appearing again until all jokes have been drawn once
   1. Css styling
   1. Joke categories handling
-
-***
-[__Live Github Page__](https://joseph-p-pasaoa.github.io/joke_cards__Web/)
